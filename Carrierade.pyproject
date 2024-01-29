@@ -1,0 +1,7 @@
+{
+    "files": [
+        "MainWindow.ui",
+        "app.py",
+        "widgets/dialog.ui"
+    ]
+}
