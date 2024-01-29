@@ -31,5 +31,5 @@ Activate the python environment first
 Activate the python environment first
 
 ```
-./scripts/start
+./scripts/start [MainWindow.ui]
 ```
