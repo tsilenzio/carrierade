@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>535</width>
+    <width>551</width>
     <height>574</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Carrierade</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
@@ -19,6 +19,12 @@
      <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
        <widget class="QLabel" name="date_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -31,10 +37,23 @@
        </widget>
       </item>
       <item row="7" column="0">
-       <widget class="QLineEdit" name="model_number_textbox"/>
+       <widget class="QLineEdit" name="model_number_textbox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item row="6" column="1">
        <widget class="QLabel" name="warranty_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -54,7 +73,7 @@
            <enum>Qt::Horizontal</enum>
           </property>
           <property name="sizeType">
-           <enum>QSizePolicy::Preferred</enum>
+           <enum>QSizePolicy::MinimumExpanding</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -66,6 +85,12 @@
         </item>
         <item>
          <widget class="QPushButton" name="reset_button">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
             <width>100</width>
@@ -79,6 +104,12 @@
         </item>
         <item>
          <widget class="QPushButton" name="save_button">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
           <property name="maximumSize">
            <size>
             <width>100</width>
@@ -95,30 +126,14 @@
         </item>
        </layout>
       </item>
-      <item row="11" column="0">
-       <widget class="QLineEdit" name="short_description_edit">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>240</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>80</height>
-         </size>
-        </property>
-        <property name="inputMethodHints">
-         <set>Qt::ImhMultiLine</set>
-        </property>
-        <property name="frame">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
       <item row="6" column="0">
        <widget class="QLabel" name="model_line_edit">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -132,6 +147,12 @@
       </item>
       <item row="12" column="1">
        <widget class="QLabel" name="order_number_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="text">
          <string>Order Number</string>
         </property>
@@ -139,6 +160,12 @@
       </item>
       <item row="12" column="0">
        <widget class="QLabel" name="po_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -152,6 +179,12 @@
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="dealer_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -165,6 +198,12 @@
       </item>
       <item row="2" column="1">
        <widget class="QLabel" name="account_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -178,6 +217,12 @@
       </item>
       <item row="4" column="0">
        <widget class="QLabel" name="caller_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -191,6 +236,12 @@
       </item>
       <item row="10" column="0">
        <widget class="QLabel" name="description_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -204,6 +255,12 @@
       </item>
       <item row="8" column="0">
        <widget class="QLabel" name="serial_number_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -216,16 +273,43 @@
        </widget>
       </item>
       <item row="9" column="0">
-       <widget class="QLineEdit" name="serial_number_textbox"/>
+       <widget class="QLineEdit" name="serial_number_textbox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item row="13" column="0">
-       <widget class="QLineEdit" name="po_textbox"/>
+       <widget class="QLineEdit" name="po_textbox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item row="5" column="1">
-       <widget class="QLineEdit" name="phone_textbox"/>
+       <widget class="QLineEdit" name="phone_textbox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item row="1" column="1">
        <widget class="QTimeEdit" name="time_edit">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="displayFormat">
          <string>hh:mm:ss AP</string>
         </property>
@@ -233,6 +317,12 @@
       </item>
       <item row="0" column="1">
        <widget class="QLabel" name="time_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -246,6 +336,12 @@
       </item>
       <item row="1" column="0">
        <widget class="QDateEdit" name="date_edit">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="dateTime">
          <datetime>
           <hour>17</hour>
@@ -262,10 +358,26 @@
        </widget>
       </item>
       <item row="3" column="1">
-       <widget class="QLineEdit" name="account_number_textbox"/>
+       <widget class="QLineEdit" name="account_number_textbox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item row="7" column="1" rowspan="4">
        <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::StrongFocus</enum>
+        </property>
         <property name="title">
          <string/>
         </property>
@@ -284,8 +396,29 @@
          </property>
          <item>
           <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>12</number>
+           </property>
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
            <item>
             <widget class="QRadioButton" name="radioButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>240</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::StrongFocus</enum>
+             </property>
              <property name="text">
               <string>Yes</string>
              </property>
@@ -293,6 +426,21 @@
            </item>
            <item>
             <widget class="QRadioButton" name="radioButton_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>240</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::StrongFocus</enum>
+             </property>
              <property name="text">
               <string>No</string>
              </property>
@@ -300,6 +448,21 @@
            </item>
            <item>
             <widget class="QRadioButton" name="radioButton_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>240</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="focusPolicy">
+              <enum>Qt::StrongFocus</enum>
+             </property>
              <property name="text">
               <string>N/A</string>
              </property>
@@ -315,6 +478,12 @@
       </item>
       <item row="3" column="0">
        <widget class="QComboBox" name="dealer_combobox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="editable">
          <bool>true</bool>
         </property>
@@ -327,13 +496,33 @@
        </widget>
       </item>
       <item row="13" column="1">
-       <widget class="QLineEdit" name="order_number_textbox"/>
+       <widget class="QLineEdit" name="order_number_textbox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item row="5" column="0">
-       <widget class="QLineEdit" name="caller_textbox"/>
+       <widget class="QLineEdit" name="caller_textbox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item row="4" column="1">
        <widget class="QLabel" name="phone_label">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -345,8 +534,41 @@
         </property>
        </widget>
       </item>
-      <item row="11" column="1">
-       <widget class="QPlainTextEdit" name="plainTextEdit">
+      <item row="11" column="0" colspan="2">
+       <widget class="QPlainTextEdit" name="short_description_textbox">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>33</red>
+              <green>33</green>
+              <blue>33</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>33</red>
+              <green>33</green>
+              <blue>33</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled/>
+         </palette>
+        </property>
         <property name="tabChangesFocus">
          <bool>true</bool>
         </property>
@@ -361,7 +583,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>535</width>
+     <width>551</width>
      <height>24</height>
     </rect>
    </property>
@@ -380,8 +602,7 @@
   <tabstop>radioButton</tabstop>
   <tabstop>radioButton_2</tabstop>
   <tabstop>radioButton_3</tabstop>
-  <tabstop>short_description_edit</tabstop>
-  <tabstop>plainTextEdit</tabstop>
+  <tabstop>short_description_textbox</tabstop>
   <tabstop>po_textbox</tabstop>
   <tabstop>order_number_textbox</tabstop>
   <tabstop>reset_button</tabstop>

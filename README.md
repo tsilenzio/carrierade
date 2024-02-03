@@ -27,7 +27,7 @@ Activate the python environment first
 ./scripts/compile
 ```
 
-## Run Sample UI (UI Only)
+## Run UI without Compiling (UI Only)
 Activate the python environment first
 
 ```
