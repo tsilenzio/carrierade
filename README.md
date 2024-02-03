@@ -7,29 +7,29 @@ Within the directory of the project run the following
 Windows
 ```
 python3 -m venv .venv
-source .venv/bin/activate
+source .venv\bin\activate.ps1
 
-python3 -m pip install pyside6
+python3 -m pip install -r requirements.txt
 ```
 
 MacOS
 ```
 python3 -m venv .venv
-source .venv/bin/activate.ps1
+source .venv/bin/activate
 
-python3 -m pip install pyside6
+python3 -m pip install -r requirements.txt
 ```
 
-## Compile
+## Build application
 Activate the python environment first
 
 ```
-./scripts/compile
+doit build
 ```
 
-## Run UI without Compiling (UI Only)
+## Start application
 Activate the python environment first
 
 ```
-./scripts/start [MainWindow.ui]
+doit start
 ```

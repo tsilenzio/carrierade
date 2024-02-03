@@ -17,6 +17,7 @@ def task_create():
             "file_dep": [ui_file],
             "targets": [py_file],
             "clean": True,
+            "verbosity": 2,
         }
 
 
@@ -26,4 +27,6 @@ def task_start():
         "actions": ["python main.py"],
         "file_dep": ["main.py"],
         "task_dep": ["create"],
+        "uptodate": [False],
+        "verbosity": 2,
     }
