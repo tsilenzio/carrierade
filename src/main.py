@@ -4,7 +4,8 @@ import sqlite3
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QApplication, QMainWindow
 
-from dist.MainWindow import Ui_MainWindow
+# from lib.MainWindow import Ui_MainWindow
+from ..lib.MainWindow import Ui_MainWindow
 
 print("Hello from main.py")
 
