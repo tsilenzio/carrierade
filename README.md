@@ -14,22 +14,34 @@ python3 -m pip install -r requirements.txt
 
 MacOS
 ```
-python3 -m venv .venv
+pytheon3 -m vnv .venv
 source .venv/bin/activate
 
 python3 -m pip install -r requirements.txt
 ```
 
 ## Build application
-Activate the python environment first
+Compiles the Qt6 Designer UI files into Python files
 
+Make sure to activate the python virtual environment first
 ```
-doit build
+invoke build
 ```
 
 ## Start application
-Activate the python environment first
+Starts the application without the need to compile it to a system executable binary
+
+Make sure to activate the python virtual environment first
 
 ```
-doit start
+invoke start
+```
+
+## Compile application
+Compiles the application into a system executable binary
+
+Make sure to activate the python virtual environment first
+
+```
+invoke compile
 ```
