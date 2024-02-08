@@ -1,12 +1,17 @@
 import sys
-import sqlite3
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QApplication, QMainWindow
 
+# from models import Base
 from ui.MainWindow import Ui_MainWindow
+from models import Base
 
-print("Hello from main.py")
+engine = create_engine("sqlite:///database.db")
+Base.metadata.create_all(engine)
+Session = sessionmaker(bind=engine)
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
@@ -14,9 +19,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.show()
+        self.session = Session()
 
         # Create a database connection
-        self.conn = sqlite3.connect("database.db")
+        # self.conn = sqlite3.connect("database.db")
         print("Opened database successfully")
 
 
