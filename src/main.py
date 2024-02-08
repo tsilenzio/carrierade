@@ -19,11 +19,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.show()
+
+        print("Connecting to the database...")
         self.session = Session()
 
         # Create a database connection
         # self.conn = sqlite3.connect("database.db")
-        print("Opened database successfully")
+        print("Connected database successfully")
 
 
 app = QApplication(sys.argv)

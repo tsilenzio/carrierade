@@ -1,5 +1,8 @@
+from datetime import datetime
+
 from sqlalchemy import Column, Integer, String, DateTime, func
 from sqlalchemy.orm import relationship
+
 from .base import Base
 
 
@@ -9,9 +12,14 @@ class Dealer(Base):
     dealer_id = Column(Integer, primary_key=True, autoincrement=True)
     dealer_name = Column(String, nullable=False)
     account_number = Column(String, nullable=False)
+
+    # Fields for managing creation, updates, and deletions
     created_at = Column(DateTime, default=func.now())
     updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
     deleted_at = Column(DateTime, nullable=True)
 
-    # Relationship to Orders
-    orders = relationship("Order", back_populates="dealer")
+    # Relationships
+    orders = relationship("Order", back_populates="dealer", passive_deletes="all")
+
+    def soft_delete(self):
+        self.deleted_at = datetime.utcnow()
