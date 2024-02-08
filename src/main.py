@@ -6,7 +6,7 @@ from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QApplication, QMainWindow
 
 # from models import Base
-from ui.MainWindow import Ui_MainWindow
+from ui import Ui_MainWindow
 from models import Base
 
 engine = create_engine("sqlite:///database.db")

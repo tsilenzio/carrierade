@@ -8,10 +8,13 @@ import shutil
 def clean(ctx):
     """Delete the compiled UI files and the 'dist' directory"""
     # Remove compiled UI files
-    if os.path.exists("lib"):
-        for ui_compiled_file in glob.glob("src/ui/*.py"):
-            print(f"Removing {ui_compiled_file}")
-            os.remove(ui_compiled_file)
+    if os.path.exists("src/ui"):
+        for ui_file in glob.glob("widgets/*.ui"):
+            base_name = os.path.basename(ui_file)
+            py_file = f"src/ui/{base_name[:-3]}.py"
+            if os.path.exists(py_file):
+                print(f"Removing {py_file}")
+                os.remove(py_file)
 
     # Remove the compiled application and dist directory
     if os.path.exists("dist"):
@@ -22,10 +25,10 @@ def clean(ctx):
 @task(pre=[clean])
 def build(ctx):
     """Compile Qt UI files to python files and place them in the 'src/ui' directory"""
-    os.makedirs("lib", exist_ok=True)
+    os.makedirs("src/ui", exist_ok=True)
     for ui_file in glob.glob("widgets/*.ui"):
-        base_dir = os.path.basename(ui_file)
-        py_file = f"src/ui/{base_dir[:-3]}.py"
+        base_name = os.path.basename(ui_file)
+        py_file = f"src/ui/{base_name[:-3]}.py"
         print(f"Compiling {ui_file} to {py_file}")
         ctx.run(f"pyside6-uic {ui_file} -o {py_file}")
 
